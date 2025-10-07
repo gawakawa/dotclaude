@@ -1,0 +1,16 @@
+# Runtime data
+__store.db
+history.jsonl
+file-history/
+shell-snapshots/
+statsig/
+todos/
+
+# Local settings
+settings.local.json
+
+# Plugins 
+plugins/
+
+# Projects
+projects/
