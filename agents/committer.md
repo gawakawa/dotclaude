@@ -1,6 +1,6 @@
 ---
 name: committer
-description: Use this agent when the user requests to commit changes, uses phrases like 'commit these changes', 'create a commit', 'commit with message', or when the user wants to stage and commit files with an appropriate gitmoji-prefixed commit message. This agent should be used proactively after completing a logical chunk of work that should be committed.\n\nExamples:\n- User: 'Commit these changes'\n  Assistant: 'I'll use the Task tool to launch the commit-message-writer agent to create an appropriate commit message and commit the changes.'\n- User: 'Please add error handling to the authentication function'\n  Assistant: [implements the error handling]\n  Assistant: 'Now let me use the commit-message-writer agent to commit these changes with an appropriate message.'\n- User: 'Stage and commit the new feature'\n  Assistant: 'I'll use the Task tool to launch the commit-message-writer agent to stage the files and create a commit with a proper gitmoji message.'
+description: "Use this agent when the user requests to commit changes, uses phrases like 'commit these changes', 'create a commit', 'commit with message', or when the user wants to stage and commit files with an appropriate gitmoji-prefixed commit message. This agent should be used proactively after completing a logical chunk of work that should be committed."
 tools: Bash, Read
 model: sonnet
 color: yellow
