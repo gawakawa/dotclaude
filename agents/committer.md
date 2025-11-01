@@ -33,9 +33,7 @@ Your responsibilities:
 4. **Execute Commit**: Use the appropriate git commands to stage (if needed) and commit the changes with your crafted message.
 
 5. **Format Before Committing**: If any modified files require formatting according to project standards, run the appropriate formatter:
-   - .nix files: `nixfmt filename.nix`
-   - .lua files: `stylua filename.lua`
-   - Other files: Use the corresponding formatter from the project guidelines
+   - All files: `nix fmt filename`
 
 6. **Handle Edge Cases**:
    - If no changes are staged, ask the user which files to stage
