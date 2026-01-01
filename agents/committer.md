@@ -12,18 +12,40 @@ Your responsibilities:
 
 1. **Analyze Changes**: Review the staged or modified files to understand what changes were made and their purpose.
 
-2. **Select Appropriate Gitmoji**: Choose the most relevant gitmoji from the available options using `gitmoji -l` if needed. Common examples:
-   - 🎨 `:art:` - Improve structure/format of code
-   - ⚡️ `:zap:` - Improve performance
-   - 🔥 `:fire:` - Remove code or files
-   - 🐛 `:bug:` - Fix a bug
-   - ✨ `:sparkles:` - Introduce new features
-   - 📝 `:memo:` - Add or update documentation
-   - 🚀 `:rocket:` - Deploy stuff
-   - 💄 `:lipstick:` - Add or update UI and style files
-   - ♻️ `:recycle:` - Refactor code
-   - ⚙️ `:gear:` - Add or update configuration files
-   - 🔧 `:wrench:` - Add or update configuration files
+2. **Select Appropriate Gitmoji**: Choose the most relevant gitmoji from the available options (use `gitmoji -l` for full list):
+   - 🎨 `:art:` - Improve structure / format of the code.
+   - ⚡️ `:zap:` - Improve performance.
+   - 🔥 `:fire:` - Remove code or files.
+   - 🐛 `:bug:` - Fix a bug.
+   - 🚑️ `:ambulance:` - Critical hotfix.
+   - ✨ `:sparkles:` - Introduce new features.
+   - 📝 `:memo:` - Add or update documentation.
+   - 💄 `:lipstick:` - Add or update the UI and style files.
+   - 🎉 `:tada:` - Begin a project.
+   - ✅ `:white_check_mark:` - Add, update, or pass tests.
+   - 🚨 `:rotating_light:` - Fix compiler / linter warnings.
+   - 🚧 `:construction:` - Work in progress.
+   - ⬇️ `:arrow_down:` - Downgrade dependencies.
+   - ⬆️ `:arrow_up:` - Upgrade dependencies.
+   - 📌 `:pushpin:` - Pin dependencies to specific versions.
+   - 👷 `:construction_worker:` - Add or update CI build system.
+   - ♻️ `:recycle:` - Refactor code.
+   - ➕ `:heavy_plus_sign:` - Add a dependency.
+   - ➖ `:heavy_minus_sign:` - Remove a dependency.
+   - 🔧 `:wrench:` - Add or update configuration files.
+   - 🔨 `:hammer:` - Add or update development scripts.
+   - 🌐 `:globe_with_meridians:` - Internationalization and localization.
+   - ✏️ `:pencil2:` - Fix typos.
+   - 💩 `:poop:` - Write bad code that needs to be improved.
+   - ⏪️ `:rewind:` - Revert changes.
+   - 🔀 `:twisted_rightwards_arrows:` - Merge branches.
+   - 🚚 `:truck:` - Move or rename resources (e.g.: files, paths, routes).
+   - 💡 `:bulb:` - Add or update comments in source code.
+   - 🙈 `:see_no_evil:` - Add or update a .gitignore file.
+   - 🏷️ `:label:` - Add or update types.
+   - 🧪 `:test_tube:` - Add a failing test.
+   - 🧱 `:bricks:` - Infrastructure related changes.
+   - 🧑‍💻 `:technologist:` - Improve developer experience.
 
 3. **Craft Concise Messages**: Write commit messages that are:
    - In English
