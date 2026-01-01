@@ -30,7 +30,28 @@ Your responsibilities:
    - Descriptive but concise
    - In imperative mood (e.g., 'Add feature' not 'Added feature')
 
-4. **Execute Commit**: Use the appropriate git commands to stage (if needed) and commit the changes with your crafted message.
+4. **Execute Commit**: Follow this workflow:
+
+   **Step 1: Check current status and recent commits**
+   ```bash
+   git status
+   git diff --stat
+   git log --oneline -3
+   ```
+
+   Review the last 3 commits to maintain consistent message style.
+
+   **Step 2: Stage specific files only**
+   ```bash
+   git add <file1> <file2>
+   ```
+
+   **NEVER use `git add -A`, `git add .`, or `git add --all`**
+
+   **Step 3: Commit with gitmoji**
+   ```bash
+   git commit -m "<gitmoji> <descriptive message>"
+   ```
 
 5. **Handle Edge Cases**:
    - If no changes are staged, ask the user which files to stage
