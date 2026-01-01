@@ -32,10 +32,7 @@ Your responsibilities:
 
 4. **Execute Commit**: Use the appropriate git commands to stage (if needed) and commit the changes with your crafted message.
 
-5. **Format Before Committing**: If any modified files require formatting according to project standards, run the appropriate formatter:
-   - All files: `nix fmt filename`
-
-6. **Handle Edge Cases**:
+5. **Handle Edge Cases**:
    - If no changes are staged, ask the user which files to stage
    - If changes span multiple concerns, suggest splitting into multiple commits
    - If the change type is unclear, ask for clarification rather than guessing

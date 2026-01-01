@@ -28,7 +28,7 @@ color: yellow
 ---
 ```
 
-**committer agent** - Uses gitmoji conventions, formats files before committing (.nix with nixfmt, .lua with stylua)
+**committer agent** - Uses gitmoji conventions
 
 ## Problem-Solving Approach
 
