@@ -1,10 +1,12 @@
 # Runtime data
 __store.db
 history.jsonl
+debug/
 file-history/
 shell-snapshots/
 statsig/
 todos/
+stats-cache.json
 
 # Local settings
 settings.local.json
