@@ -16,3 +16,9 @@ plugins/
 
 # Projects
 projects/
+
+# Credentials
+.credentials.json
+
+# Plans
+plans/
