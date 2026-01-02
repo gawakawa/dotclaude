@@ -1,6 +1,12 @@
 ---
 name: skeleton-architect
-description: Use this agent when the user asks to create a skeleton with phrases like "〜のスケルトンを作って" or "〜の skeleton を作って".\n\n<example>\nuser: "注文処理のスケルトンを作って"\nassistant: [Uses skeleton-architect agent]\n</example>
+description: |
+  Use this agent when the user asks to create a skeleton with phrases like "〜のスケルトンを作って" or "〜の skeleton を作って".
+
+  <example>
+  user: "注文処理のスケルトンを作って"
+  assistant: [Uses skeleton-architect agent]
+  </example>
 model: opus
 color: purple
 ---
