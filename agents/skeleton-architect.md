@@ -18,55 +18,21 @@ A skeleton shows the logic flow through minimal implementation:
 
 ```typescript
 // Types
-type Order = {
-  id: string;
-  items: Item[];
-  payment: Payment;
-};
-
-type Item = {
-  productId: string;
-  quantity: number;
-};
-
-type Payment = {
-  method: string;
-  amount: number;
-};
-
-type ValidatedOrder = {
-  orderId: string;
-  items: Item[];
-};
-
-type StockInfo = {
-  available: boolean;
-  reservationId: string;
-};
-
-type PaymentResult = {
-  success: boolean;
-  transactionId: string;
-};
-
-type OrderResult = {
-  orderId: string;
-  status: string;
-};
+type Item = { productId: string; quantity: number };
+type Payment = { method: string; amount: number };
+type Order = { id: string; items: Item[]; payment: Payment };
+type StockInfo = { available: boolean; reservationId: string };
+type PaymentResult = { success: boolean; transactionId: string };
+type OrderResult = { orderId: string; status: string };
 
 // Core logic
 const processOrder = async (order: Order): Promise<OrderResult> => {
-  const validated = validateOrder(order);
-  const stock = await checkStock(validated.items);
+  const stock = await checkStock(order.items);
   const payment = await processPayment(order.payment, stock);
-  return confirmOrder(order, payment);
+  return confirmOrder(order.id, payment);
 };
 
 // Supporting functions
-const validateOrder = (order: Order): ValidatedOrder => {
-  return { orderId: '', items: [] };
-};
-
 const checkStock = async (items: Item[]): Promise<StockInfo> => {
   return { available: false, reservationId: '' };
 };
@@ -75,7 +41,7 @@ const processPayment = async (payment: Payment, stock: StockInfo): Promise<Payme
   return { success: false, transactionId: '' };
 };
 
-const confirmOrder = (order: Order, payment: PaymentResult): OrderResult => {
+const confirmOrder = (orderId: string, payment: PaymentResult): OrderResult => {
   return { orderId: '', status: '' };
 };
 ```
